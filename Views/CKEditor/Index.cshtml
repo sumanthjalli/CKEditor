@@ -1,0 +1,60 @@
+﻿
+@{
+    @model IEnumerator<CKEditorDemo.Models.TestModel>
+
+    ViewBag.Title = "Index";
+}
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<script src="~/Scripts/jquery-3.3.1.min.js"></script>
+<script src="~/Scripts/ckeditor/ckeditor.js"></script>
+<h2>Index</h2>
+
+@using (Html.BeginForm())
+{
+<form>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label>Title</label>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <div class="form-group">
+                    <input type="text" name="Title" placeholder="Enter Title" />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label>Help Content</label>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <div class="form-group">
+                    <textarea class="ckeditor" name="HelpContent"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <div class="form-group">
+                   
+                </div>
+            </div>
+            <div class="col-md-10">
+                <div class="form-group">
+                    <button type="submit" name="HelpContent" class="btn btn-block btn-danger"  />
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</form>
+    
+
+}
